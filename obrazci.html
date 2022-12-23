@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma zadatak</title>
+</head>
+<body>
+    <form>
+        <p>
+            <label for="ime">Ime i prezime*</label>
+        <br><input type="text" name="name" required placeholder="Vaše ime i prezime">
+        </p>
+    </form>
+    <form>
+        <p>
+            <label for="ime">E-mail adresa*</label>
+        <br><input type="text" name="email" required placeholder="Upišite valjanu e-mail adresu">
+        </p>
+    </form>
+    <form>
+        <p>
+            <label for="ime">Kontakt broj telefona</label>
+        <br><input type="text" name="broj" >
+        </p>
+    </form>
+    <form>
+        <p>
+            <label for="datum">Datum rođenja</label>
+        <br><input id="datum" type="date" name="datum" required>
+        </p>
+    </form>
+    <form>
+        <p>
+            <p><strong>Koje jezike govorite?</strong></p>
+
+            Engleski <input type="checkbox" name="language" id="Engleski"> 
+            Talijanski <input type="checkbox" name="language" id="Talijanski"> 
+            Njemacki <input type="checkbox" name="language" id="Njemacki">
+            Francuski <input type="checkbox" name="language" id="Francuski">
+            Španjolski <input type="checkbox" name="language" id="Španjolski">
+        </p>
+    </form>
+    <p><strong>Da li ste do sada koristili usluge naše tvrtke?</strong></p>
+    <form>
+        <input type="radio" name="option" value="da" checked> Da
+        <input type="radio" name="option" value="ne"> Ne
+    </form>
+    <p>
+        <label for="cv">Priložite životopis</label>
+       <br> <input id="cv" name="cv" type="file" required>
+    </p>
+
+    <p>
+        <input name="reset_btn" type="reset" value="Poništi">
+        <input name="submit_btn" type="submit" value="Prijavi se">
+    </p>
+    
+</body>
+</html>
