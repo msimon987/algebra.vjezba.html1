@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <p>U donji kvadrat veličine 10 redova i 30 stupaca možemo upisati text.</p>
+    <textarea cols="30" rows="10">Ovdje mozemo upisivati text.</textarea>
+
+    <p><strong>Text</strong></p>
+    <form>
+        Ime: <input type="text" name="ime">
+        <br/></br>
+        Prezime: <input type="text" name="prezime">
+    </form>
+
+    <h1>Volim jesti:</h1>
+
+        jabuke <input type="checkbox" name="voce" value="Jabuke"> <br>
+        kruške <input type="checkbox" name="voce" id="Kruske"> <br>
+        marelice <input type="checkbox" name="voce" id="Marelice">
+
+    <p><strong>Radio</strong></p>
+    <form>
+        <input type="radio" name="spol" value="muško" checked> Muško
+       <br> <input type="radio" name="spol" value="žensko"> Žensko
+    </form>
+
+    <p><strong>Button</strong></p>
+    <form action=""></form>
+    <h1>Ako se slažeš klikni na OK</h1>
+    <input type="button" value="OK">
+
+    <p><strong>Submit</strong></p>
+    <form name="input" action="html_form_action.asp" method="post">
+        Korisničko ime: <input type="text" name="user">
+       <br> <input type="submit" value="submit">
+    </form>
+
+    <p><strong>Dropdown</strong></p>
+    <form action="">
+        <select name="boje">
+            <option value="plava">plava</option>
+            <option value="plava">žuta</option>
+            <option value="plava">zelena</option>
+            <option value="plava">crvena</option>
+        </select>
+    </form>
+</body>
+</html>
