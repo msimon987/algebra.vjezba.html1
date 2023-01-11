@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Responsive form</h1>
+        <p>
+            <label for="ime">Poruka</label>
+            <br><textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </p>
+        <fieldset style="width: fit-content;">
+            <legend>Odaberi</legend>
+        <div id="radioDefault_5" name="Field5" type="hidden" value="">
+            <div>
+                <input name="Field5" type="radio" value="Prvi odabir" checked="checked">
+                <label class="choice" for="Field5_0">Prvi odabir</label>
+                <br><input name="Field5" type="radio" value="Prvi odabir" >
+                <label class="choice" for="Field5_0">Drugi odabir</label>
+                <br><input name="Field5" type="radio" value="Prvi odabir" >
+                <label class="choice" for="Field5_0">Treci odabir</label>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset style="width: fit-content;">
+        <legend>Višestruki odabir</legend>
+        <div>
+           <input type="checkbox" name="language" id="Engleski"> Prvo
+           <br> <input type="checkbox" name="language" id="Talijanski"> Drugo 
+            <br> <input type="checkbox" name="language" id="Njemacki"> Treće
+        </div>
+    </fieldset>
+    <div>
+        <label id="LabelID" for="field">Odaberi s liste</label>
+    </div>
+    <div>
+        <select name="select" id="select123">
+            <option value="prvi">Prvi - 1</option>
+            <option value="prvi">Drugi - 2</option>
+            <option value="prvi">Treci - 3</option>
+        </select>
+    </div>
+        <br><button>Potvrdi</button>
+    </form>
+    <form action="sdsfg">
+    <table>
+        <tr>
+            <td rowspan="1">
+            <p>
+                <label for="ime">Ime i prezime</label>
+                <br><input type="text" name="email" required placeholder="Upišite valjanu e-mail adresu">
+            </p>
+        </td>
+        <td>
+            <p>
+                <label for="ime">Email</label>
+                <br><input type="text" name="email" required placeholder="Upišite valjanu e-mail adresu">
+            </p>
+        </td>
+        </tr>
+        <tr>
+            <td colspan="1">
+                <p>
+                    <label for="ime">Poruka</label>
+                    <br><textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <fieldset style="width: fit-content;">
+                    <legend>Odaberi</legend>
+                <div id="radioDefault_5" name="Field5" type="hidden" value="">
+                    <div>
+                        <input name="Field5" type="radio" value="Prvi odabir" checked="checked">
+                        <label class="choice" for="Field5_0">Prvi odabir</label>
+                        <br><input name="Field5" type="radio" value="Prvi odabir" >
+                        <label class="choice" for="Field5_0">Drugi odabir</label>
+                        <br><input name="Field5" type="radio" value="Prvi odabir" >
+                        <label class="choice" for="Field5_0">Treci odabir</label>
+                    </div>
+                </div>
+            </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <fieldset style="width: fit-content;">
+                    <legend>Višestruki odabir</legend>
+                    <div>
+                       <input type="checkbox" name="language" id="Engleski"> Prvo
+                       <br> <input type="checkbox" name="language" id="Talijanski"> Drugo 
+                        <br> <input type="checkbox" name="language" id="Njemacki"> Treće
+                    </div>
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
