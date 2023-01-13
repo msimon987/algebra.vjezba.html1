@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a {
+        color: magenta;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    a[target="_blank"] {
+        color: red;
+    }
+    div[data-some*=dio] {
+        color: green;
+    }
+</style>
+<body>
+    <ul>
+        <li>Link u istom prozoru <a href="https://www.google.com/">google.com</a></li>
+        <li>Link u novom prozoru <a href="https://www.wikipedia.org/" target="_blank">wikipedia.org</a></li>
+        <li>Link u istom prozoru <a href="https://www.algebra.hr/">algebra.hr</a></li>
+    </ul>
+
+    <div data-some="prog dio">Bilo gdje</div>
+    <div data-some="dio prog">Bilo gdje</div>
+    <div data-some="prog dio prog">Bilo gdje</div>
+    <div data-some="prog">Bilo gdje</div>
+
+</body>
+</html>
