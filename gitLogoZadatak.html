@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git logo zadatak</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        justify-content: center;
+        background-color: azure;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .git-logo {
+        height: 150px;
+        width: 150px;
+        background-color: #f06033;
+        border-radius: 15px;
+        position: relative;
+        transform: rotate(45deg);
+        
+    }
+    .line1 {
+        width: 110px;
+        background-color: white;
+        height: 10px;
+        top: 40px;
+        position: absolute;
+    }
+    .line1::before {
+        content:"";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 50%;
+        top: -10px;
+        left: 30px;     
+    }
+    .line1::after {
+        content:"";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 50%;
+        top: -10px;
+        left: 90px;     
+    }
+    .line2 {
+        width: 90px;
+        background-color: white;
+        height: 12px;
+        position: absolute;
+        top: 70px;
+        left: 30px;
+        transform: rotate(45deg);
+    }
+    .line2::before {
+        content:"";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 50%;
+        top: -10px;
+        left: 70px; 
+    }
+</style>
+<body>
+    <div class="git-logo">
+        <div class="line1"></div>
+        <div class="line2"></div>
+    </div>
+</body>
+</html>

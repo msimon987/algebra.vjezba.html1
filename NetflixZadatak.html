@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix zadatak</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+    }
+    .donji-rubovi {
+        width: 7.5vh;
+        height: 2vh;
+        position: absolute;
+        background-color: black;
+        bottom: -1vh;
+        transform: rotateZ(-5deg);
+    }
+    .donji-rubovi:before {
+        content: "";
+        width: 7.8vh;
+        height: 2vh;
+        position: absolute;
+        background-color: black;
+        bottom: -1vh;
+        transform: rotateZ(12deg);
+        left: 10.2vh;
+    }
+    .netflix-logo {
+        width: 7vh;
+        height: 30vh;
+        background-color: #b1060f;
+        position: relative;
+    }
+    .netflix-logo:before {
+        content: "";
+        position: absolute;
+        width: 7vh;
+        height: 30vh;
+        background-color: #e50913;
+        transform: skew(20deg);
+        left: 5.5vh;
+        box-shadow: 0 0 2.5vh -1vh black;
+    }
+    .netflix-logo:after {
+        content: "";
+        position: absolute;
+        width: 7vh;
+        height: 30vh;
+        background-color: #b1060f;
+        left: 11vh;
+        z-index: -1;
+    }
+    
+    
+</style>
+<body>
+    <div class="netflix-logo">
+        <div class="donji-rubovi"></div>
+    </div>
+</body>
+</html>
