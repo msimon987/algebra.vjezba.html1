@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo klase</title>
+</head>
+<style>
+   /* a:link {
+        color: lightsalmon;
+        background-color: lawngreen;
+        font-weight: bold;
+        font-size: 32px;
+    }
+    a:visited {
+        color: magenta;
+        background-color: yellow;
+    }*/
+    a:hover {
+        text-decoration: green wavy underline;
+        background-color: yellow;
+    }
+    a:active {
+        background-color: red;
+        color: white;
+        text-decoration: underline;
+    }
+    a.vrsta1:link {
+        color: black;
+    }
+    a.vrsta1:visited {
+        color: #00c;
+    }
+    a.vrsta1:hover {
+        text-decoration: green wavy underline;
+    }
+    a.vrsta1:active {
+        background-color: yellow;
+        color: black;
+    }
+    a.vrsta2 {
+        text-decoration: underline;
+    }
+    a.vrsta2:link {
+        color: #000000;
+    }
+    a.vrsta2:visited {
+        color: red;
+    }
+    a.vrsta2:hover {
+        background-color: purple;
+        color: #ffffff;
+        text-decoration: underline dotted;
+    }
+    a.vrsta2:active {
+        background-color: blue;
+        color: white;
+    }
+    
+</style>
+<body>
+    <ul>
+        <li><a href="https://www.algebra.hr/visoko-uciliste/">Algebra</a></li>
+        <br>
+        <li><a href="https://www.imdb.com/" target="_blank">Goolge</a></li>
+    </ul>
+    <ul>
+        <li><a href="https://www.index.hr/">Index</a></li>
+        <br>
+        <li><a href="https://www.jutarnji.hr/" target="_blank">Jutarnji</a></li>
+    </ul>
+    <ul>
+        <li><a class="vrsta1" href="https://www.vecernji.hr/"> Vecernji</a></li>
+        <br>
+        <li><a class="vrsta2" href="https://www.dnevnik.hr/"> Dnevnik</a></li>
+
+    </ul>
+</body>
+</html>
