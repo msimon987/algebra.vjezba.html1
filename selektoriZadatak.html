@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektori zadatak</title>
+</head>
+<style>
+    div {
+        width: 28%;
+    }
+    section {
+        border: black solid 2px;
+        margin-bottom: 10px;
+    }
+   hr {
+       border: dotted 2px red;
+   }
+   h3::first-letter, h1::first-letter{
+        color: blue;
+        font-size: xx-large;    
+    }
+    ::marker {
+        color: red;
+    }
+    .grad {
+        list-style-type: upper-latin;
+    }
+    .rijeka {
+        list-style-type: lower-latin;
+    }
+    .zagreb::after, .sava::after {
+        content: "\2713";
+        color: green;
+    }
+    li:visited {
+        color: magenta;
+    }
+    a::before {
+        content: "\2023";
+    }
+    ul.video {
+        list-style-type: none;
+    }
+</style>
+<body>
+    <div>
+        <section>
+            <h3>1 Koji je glavni grad hrvatske?</h2>
+            <ul class="grad">
+                <li>Koprivnica</li>
+                <li>Osijeku</li>
+                <li class="zagreb">Zagreb</li>
+                <li>Rijeka</li>
+            </ul>
+        </section>
+    <hr>
+    </div>
+    <div>
+        <section>
+            <h3>2 Koja je rijeka koja protječe kroz hrvatsku najduza</h2>
+            <ul class="rijeka">
+                <li>Mura</li>
+                <li class="sava">Sava</li>
+                <li>Drava</li>
+                <li>Dunav</li>
+            </ul>
+        </section>
+        <hr>
+    </div>
+    <div>
+        <section>     
+            <h3>3 Pogledajte slijedece video linkove</h2>
+            <ul class="video">
+                <li><a href="#">Play bass guitar</a></li>
+                <li><a href="#">Stop eating sugar</a></li>
+                <li><a href="https://www.algebra.hr/">Treci</a></li>
+                <li><a href="https://www.algebra.hr/">Cetvrti</a></li>
+                <li><a href="https://www.algebra.hr/">Peti</a></li>
+            </ul>
+        </section> 
+        <hr>
+    </div>
+</body>
+</html>
