@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traka sa pseudo elementima</title>
+</head>
+<style>
+    html, body {
+        font-family: Arial;
+        overflow-x: hidden;
+    }
+    body {
+        background: #ccc;
+    }
+    section {
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 25rem;
+        background: white;
+        padding: 30px;
+        padding-bottom: 60px;
+    }
+    .full-width {
+        position: relative;
+        margin: 0 -30px;
+        padding: .25rem 30px;
+        background: black;
+        color: white;
+        font-size: 1.125rem;
+    }
+    .full-width::before, .full-width::after {
+        content: "";
+        position:absolute ;
+        top: 0;
+        bottom: 0;
+        width: 960px;
+        right: 100%;
+        background: red;
+    }
+    .full-width::after {
+        width: 960px;
+        left: 100%;
+        background: green;
+    }
+</style>
+<body>
+    <section>
+        <h2 class="full-width">Traka pune Širine s pseudo elementima</h2>
+
+        <p>Koristeći pseudoelemente :before i :after, možemo proširiti prividnu špozadinu elementa h2 izvan &lt;section&gt; u kojem se nalazi</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised i</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised i</p>
+    </section>
+</body>
+</html>
