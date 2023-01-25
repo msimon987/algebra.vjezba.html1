@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header {
+        display: block;
+    }
+    .header {
+        float: left;
+        width: 100%;
+        padding: 0.5em 0;
+    }
+    .header h1 {
+        font-family: Arial, sans-serif;
+        color: #6a4aed;
+        font-size: 26px;
+        font-weight: 700;
+        margin: 0;
+        line-height: normal;
+    }
+    div.header-line {
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 25rem;
+        background: white;
+        padding: 30px;
+        text-align: center;
+    }
+    .full-width-header {
+        position: relative;
+        margin: 0 -30px;
+        padding: .25rem 30px;
+        background: white;
+        color: white;
+        font-size: 1.125rem;
+    }
+    .full-width-header::before, .full-width-header::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 960px;
+        right: 100%;
+        background: red;
+    }
+    .full-width-header::after {
+        width: 960px;
+        left: 100%;
+        background: blue;
+    }
+    .tabs-container {
+        position: relative;
+        background: blue;
+        width: 120px;
+        height: 100vh;
+        float: left;
+        z-index: 20;
+    }
+    .tabs-container label:hover {
+        background: darkslateblue;
+    }
+    .tabs-container label {
+        position: relative;
+        padding: 10px;
+        border-bottom: 1px solid greenyellow;
+        display: block;
+        font-size: 13px;
+        color: whitesmoke;
+        cursor: pointer;
+        user-select: none;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="header-line">
+            <h1 class="full-width-header">Moja stranica sa vertikalnima tabovima</h1>
+        </div>
+    </header>
+    <div>
+    <section class="tabs-container">
+        <label for="tab1">Priroda</label>
+        <label for="tab2">Cvijeće</label>
+        <label for="tab3">Planine</label>
+        <label for="tab4">Zgrade</label>
+        <label for="tab5">Ceste</label>
+        <label for="tab6">Šume</label>
+    </section>
+    <input name="tab" id="tab1" type="radio" checked>
+    <section class="tab-content">
+        <h2>Priroda</h2>
+        <p>Neki moj text koji je povezan sa prirodom</p>
+        <img src="https://cdn.pixabay.com/photo/2018/06/13/18/20/waves-3473335__340.jpg" alt="More">
+        <p>Opis koji ce se odnositi na prethodnu sliku prpirode</p>
+    </section>
+    <input name="tab" id="tab2" type="radio">
+    <section class="tab-content">
+        <h2>Cvijeće</h2>
+        <p>Opis koji ce se odnositi na prethodnu sliku cvijeća</p>
+        <img src="https://cdn.britannica.com/84/73184-004-E5A450B5/Sunflower-field-Fargo-North-Dakota.jpg" alt="Cvijeće">
+    </section>
+</div>
+</body>
+</html>
